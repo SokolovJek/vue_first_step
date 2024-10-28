@@ -1,7 +1,6 @@
 <script setup>
 import { ref, computed } from "vue"
 
-const count = ref(0)
 const _todo_text = ref("");
 const _todo_list = ref([]);
 const _pending = computed(() => {

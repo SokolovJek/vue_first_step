@@ -10,6 +10,12 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## Create Project
+
+```sh
+npm create vite@latest
+```
+
 ## Project Setup
 
 ```sh
@@ -62,6 +68,19 @@ h1 {
 - Тег template окружает HTML для нашего компонента. Здесь мы можем использовать элементы HTML, другие компоненты, директивы и т. д.
 
 - Тег style, в котором мы разместим CSS для нашего компонента
+
+существует альтернативный синтаксис для Composition API, называемый `script setup`, который позволяет убрать избыточный код
+```
+<script>
+import { ref } from "vue";
+export default {
+  setup() {
+    const _hello = ref("Hello World");
+    return { _hello };
+  },
+};
+</script>
+```
 
 ## Варианты описания компонента Vue3
 
