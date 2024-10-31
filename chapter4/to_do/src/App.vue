@@ -1,11 +1,17 @@
 <script setup>
-import ToDos from "@components/ToDos.vue"
+import ToDosProject from "@components/ToDosProject.vue"
+import MainHeader from "@components/headers/MainHeader.vue"
 </script>
 
 <template>
+
 	<div class="app w3-blue-gray">
-		<ToDos />
+		<MainHeader />
 	</div>
+	<div class="app w3-blue-gray">
+		<ToDosProject />
+	</div>
+
 </template>
 
 <style scoped>
